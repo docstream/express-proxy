@@ -1,7 +1,7 @@
 {
-  "name": "@richardkazuomiller/express-http-proxy",
-  "version": "2.0.1",
-  "description": "http proxy middleware for express",
+  "name": "@docstream/express-proxy",
+  "version": "1.0.0",
+  "description": "Proxy middleware for Express JS",
   "engines": {
     "node": ">=14.0.0"
   },
@@ -16,19 +16,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/richardkazuomiller/express-http-proxy.git"
+    "url": "https://github.com/docstream/express-proxy.git"
   },
   "keywords": [
-    "express-http-proxy"
+    "express-http"
   ],
   "author": {
     "name": "Ricky Miller",
     "email": "ricky@ricky.me"
   },
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/richardkazuomiller/express-http-proxy/issues"
-  },
   "devDependencies": {
     "@semantic-release/changelog": "6.0.2",
     "@semantic-release/exec": "6.0.3",
@@ -76,11 +73,15 @@
     {
       "name": "Ricky Miller",
       "url": "https://github.com/richardkazuomiller"
-    }
+    },
+    {
+      "name": "Rune Aspvik",
+      "email": "ra@docstream.no"
+    },
   ],
   "release": {
     "branches": [
-      "master",
+      "main",
       {
         "name": "next",
         "prerelease": true
@@ -105,6 +106,6 @@
     ]
   },
   "publishConfig": {
-    "access": "public"
+    "access": "private"
   }
 }
