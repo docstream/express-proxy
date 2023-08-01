@@ -1,16 +1,17 @@
 'use strict';
 
+const getHeaders = (res) => res.getHeaders ? res.getHeaders() : res._headers;
 
 function decorateUserResHeaders(container) {
   var resolverFn = container.options.userResHeaderDecorator;
-  var headers = container.user.res.getHeaders ? container.user.res.getHeaders() : container.user.res._headers;
+  var headers = getHeaders(container.user.res);
 
   if (!resolverFn) {
     return Promise.resolve(container);
   }
 
   const clearAllHeaders = (res) => {
-    for (const header in res._headers) {
+    for (const header in getHeaders(res)) {
       res.removeHeader(header);
     }
   };
