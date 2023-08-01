@@ -6,7 +6,7 @@ Express middleware to proxy request to another host and pass response back to or
 ## Install
 
 ```bash
-$ npm install @richardkazuomiller/express-http-proxy --save
+$ npm install @docstream/express-http-proxy
 ```
 
 ## Usage
