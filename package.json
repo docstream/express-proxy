@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "debug": "^4.3.4",
-    "es6-promise": "^4.1.1",
+    "es6-promise": "^4.2.8",
     "raw-body": "^2.3.0"
   },
   "contributors": [
